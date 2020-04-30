@@ -43,7 +43,7 @@ namespace NGettext.Wpf
             return new Catalog(_domainName, localeDir, cultureInfo);
         }
 
-        public ICatalog Catalog { get; private set; }
+        public ICatalog Catalog { get; set; }
         public ICultureTracker CultureTracker { get; }
 
         public void Dispose()
